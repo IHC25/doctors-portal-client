@@ -2,7 +2,7 @@ import React from "react";
 import footer from "../../assets/images/footer.png";
 
 const Footer = () => {
-  const newDate = Date().slice(11, 15);
+  const now = new Date();
   return (
     <footer style={{ background: `url(${footer})` }} className="p-10 ">
       <div className="footer">
@@ -28,7 +28,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="my-10 text-center">
-        <p>Copyright © {newDate} - All right reserved by ACME Industries Ltd</p>
+        <p>
+          Copyright © {now.getFullYear()} - All right reserved by ACME
+          Industries Ltd
+        </p>
       </div>
     </footer>
   );
