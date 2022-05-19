@@ -36,11 +36,7 @@ const Contact = () => {
               placeholder="Your Message"
               className="input input-bordered input-lg w-full max-w-xs mb-6"
             />
-            <PrimaryButton>
-              <button className="px-3" type="submit">
-                Submit
-              </button>
-            </PrimaryButton>
+            <PrimaryButton>Submit</PrimaryButton>
           </form>
         </div>
       </div>
